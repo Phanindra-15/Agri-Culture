@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="contact.php" method="POST">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email id...">
+    
+    <label for="soil_type">soil type</label>
+    <select name="soil type" id="soil type">
+      <option>Select soil type</option>
+    <option value="Red soil">Red soil</option>
+    <option value="Black soil">Black soil</option>
+    <option value="Alluvial soil">Alluvial soil</option>
+    <option value="Desert soil">Desert soil</option>
+    <option value="Laterite soil">Laterite soil</option>
+    <option value="Forest soil">Forest soil</option>
+  </select>
+    <!-- <input type="text" id="soil_type" name="soil_type" placeholder="soil type..."> -->
+
+    <!-- <label for="geographic location">Location</label>
+    <br> -->
+    <label for="country">country</label>
+    <select name="country" id="country">
+      <option value="india">India</option></select>
+
+    <!-- <input type="text" id="geographic location" name="geographic location" placeholder="Your geographic location..."> -->
+    <label for="state">state</label>
+    <select name="state" id="state">
+      <option>Select a state</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
+</select>
+
+ <label for="district">District</label>
+    <input type="text" id="district" name="district" placeholder="Enter your district name"> 
+
+  <label for="village">Village</label>
+    <input type="text" id="village" name="village" placeholder="Enter your village name"> 
+
+<label for="rainfall">Rainfall</label>
+    <select name="rainfall" id="rainfall">
+    <option>Level of rainfall</option>
+    <option value="high">High</option>
+    <option value="average">Average</option>
+    <option value="low">Low</option></select>
+
+
+    <label for="groundwater availability">groundwater availability</label>
+    <select name="groundwater availability" id="groundwater availability">
+      <option>Select groundwater availability</option>
+    <option value="high">High</option>
+    <option value="moderate">Moderate</option>
+    <option value="low">Low</option></select>
+
+
+    
+    <!-- <input type="text" id="groundwater availability" name="groundwater availability" placeholder="groundwater availability"> -->
+
+    <label for="subject">Subject</label>
+    <textarea id="subject"name="subject" placeholder="Write something...(Query related issues too..)" style="height:200px"></textarea>
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
